@@ -1,0 +1,174 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap");
+
+body {
+  background-color: #E5E5E5;
+}
+
+.App {
+  width: 100%;
+  margin: 30px auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: wrap;
+  flex: 100%;
+}
+
+.header .header_title {
+  flex: 85%;
+}
+
+.header .header_btn {
+  flex: 15%;
+  margin-top: 30px;
+}
+
+.header .header_btn button {
+  padding: 10px 20px;
+  font-size: 70%;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  box-shadow: 3px 3px gray;
+}
+
+.header .header_btn button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  left: 36%;
+  top: 35%; 
+  z-index: 1;
+  width: 25%;
+  padding: 2%;
+  background-color: white;
+}
+
+.modal_content{
+  width: 95%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: wrap;
+  flex: 100%;
+}
+
+.modal_button {
+  text-align: center;
+}
+.modal_button button{
+  margin: 0px 30px;
+  height: 30px;
+  width: 25%;
+  background-color: #C4C4C4;
+  color: black;
+  border: none;
+}
+
+.modal_button button:first-child{
+  margin-left: 90px;
+}
+
+.modal_button button:hover{
+  background-color: gray;
+}
+
+.modal_content input {
+  flex: 85%;
+  margin: 10px 5px;
+  padding: 5px;
+  background-color: #C4C4C4;
+  border: none;
+}
+
+.modal_content span {
+  flex: 15%;
+  margin: 12px 10px;
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
+}
+
+table {
+  width: 70%;
+  margin: 0px auto;
+  background-color: white;
+}
+
+tr td {
+  padding: 10px;
+  text-align: center;
+  width: 5%;
+}
+
+tr td:first-child {
+  cursor: pointer;
+}
+
+tr td:nth-child(2) {
+  width: 85%;
+  text-align: left;
+}
+
+tr td input {
+  width: 90%;
+}
+
+i {
+  cursor: pointer;
+}
+
+.fa-calendar {
+  color: #0029FF;
+  cursor: default;
+}
+
+table, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+h2 {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.completed {
+  color: gray;
+}
+
+.no-completed, .completed {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1450px) {
+  .modal_button button{
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+  }
+  .modal_button button:first-child{
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+.modal_content input, .modal_content span {
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+}
+}
